@@ -5,16 +5,16 @@ on:
     #   - cron: '42 0 * * 1'
     - cron: "50 11 * * 3"
 # one more commit and i'm going to shower
-#  we are using cron to not polute commits history
-#  push:
-#    branches:
-#      - main
+# we are using cron to not polute commits history
+push:
+  branches:
+    - main
 jobs:
   get_data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@main
+        uses: actions/checkout@master
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:

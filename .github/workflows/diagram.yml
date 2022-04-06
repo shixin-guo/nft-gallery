@@ -23,3 +23,4 @@ jobs:
           excluded_globs: "**/*.{editorconfig,gitignore,lock,json,md,png,toml,svg,yml}"
           commit_message: "[skip ci] updated code diagram"
           output_file: ".github/diagram.svg"
+          file_colors: '{"js": "red","ts": "green"}'
